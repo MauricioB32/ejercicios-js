@@ -1,15 +1,12 @@
-const prompt = require('prompt-sync')();
+const prompt = require("prompt-sync")();
 
-let distancia = Number(prompt("Ingresa la distancia en km: "));
-let dias = Number(prompt("Ingresa los días de estancia: "));
+let distancia = parseFloat(prompt("Distancia en km: "));
+let dias = parseInt(prompt("Días de estancia: "));
 
-let precioPorKm = 2.5;
-let precioTotal = distancia * 2 * precioPorKm; // ida y vuelta
+let precio = distancia * 2.5;
 
 if (dias > 7 && distancia > 800) {
-    let descuento = precioTotal * 0.30;
-    precioTotal = precioTotal - descuento;
-    console.log("Tiene descuento del 30%");
+    precio *= 0.7;
 }
 
-console.log("El precio del billete de ida y vuelta es: " + precioTotal + " euros");
+console.log("Precio final: " + precio);

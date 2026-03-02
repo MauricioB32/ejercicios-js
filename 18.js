@@ -1,11 +1,8 @@
-const prompt = require('prompt-sync')();
+const prompt = require("prompt-sync")();
 
-let num1 = Number(prompt("Ingresa el primer número: "));
-let num2 = Number(prompt("Ingresa el segundo número: "));
-let num3 = Number(prompt("Ingresa el tercer número: "));
+let a = parseInt(prompt("Número 1: "));
+let b = parseInt(prompt("Número 2: "));
+let c = parseInt(prompt("Número 3: "));
 
-if (num1 <= num2 && num2 <= num3) {
-    console.log("Los números SÍ están en orden numérico ascendente");
-} else {
-    console.log("Los números NO están en orden numérico");
-}
+if (a <= b && b <= c) console.log("Están en orden ascendente");
+else console.log("No están en orden");

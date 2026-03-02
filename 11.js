@@ -1,11 +1,7 @@
-const prompt = require('prompt-sync')();
+const prompt = require("prompt-sync")();
 
-let angulo = Number(prompt("Ingresa el ángulo en grados: "));
+let angulo = parseFloat(prompt("Ingrese el ángulo: "));
 
-if (angulo < 90) {
-    console.log("El ángulo es AGUDO");
-} else if (angulo === 90) {
-    console.log("El ángulo es RECTO");
-} else {
-    console.log("El ángulo es OBTUSO");
-}
+if (angulo < 90) console.log("Agudo");
+else if (angulo === 90) console.log("Recto");
+else console.log("Obtuso");

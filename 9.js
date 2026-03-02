@@ -1,12 +1,8 @@
-const prompt = require('prompt-sync')();
+const prompt = require("prompt-sync")();
 
-let num1 = Number(prompt("Ingresa el primer número: "));
-let num2 = Number(prompt("Ingresa el segundo número: "));
+let a = parseFloat(prompt("Número 1: "));
+let b = parseFloat(prompt("Número 2: "));
 
-if (num1 > num2) {
-    console.log("El primer número es el mayor");
-} else if (num1 < num2) {
-    console.log("El primer número es el más pequeño");
-} else {
-    console.log("Los dos números son iguales");
-}
+if (a > b) console.log("El primer número es mayor");
+else if (a < b) console.log("El primer número es menor");
+else console.log("Son iguales");

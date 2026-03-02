@@ -1,15 +1,13 @@
-const prompt = require('prompt-sync')();
+const prompt = require("prompt-sync")();
 
-let num1 = Number(prompt("Ingresa el primer número: "));
-let num2 = Number(prompt("Ingresa el segundo número: "));
-let num3 = Number(prompt("Ingresa el tercer número: "));
+let a = parseFloat(prompt("Número 1: "));
+let b = parseFloat(prompt("Número 2: "));
+let c = parseFloat(prompt("Número 3: "));
 
-if (num1 > num2 && num1 > num3) {
-    console.log("El número mayor es: " + num1);
-} else if (num2 > num1 && num2 > num3) {
-    console.log("El número mayor es: " + num2);
-} else if (num3 > num1 && num3 > num2) {
-    console.log("El número mayor es: " + num3);
+if (a >= b && a >= c) {
+    console.log("El mayor es: " + a);
+} else if (b >= a && b >= c) {
+    console.log("El mayor es: " + b);
 } else {
-    console.log("Algunos números son iguales");
+    console.log("El mayor es: " + c);
 }

@@ -1,13 +1,7 @@
-const prompt = require('prompt-sync')();
+const prompt = require("prompt-sync")();
 
-let caracter = prompt("Ingresa un carácter: ");
+let c = prompt("Ingrese un carácter: ");
 
-if ((caracter >= 'a' && caracter <= 'z') || (caracter >= 'A' && caracter <= 'Z')) {
-    console.log("Es un carácter ALFABÉTICO");
-} else if (caracter >= '0' && caracter <= '9') {
-    console.log("Es un DÍGITO");
-} else if (caracter === '.' || caracter === ',' || caracter === ';' || caracter === ':' || caracter === '!' || caracter === '?') {
-    console.log("Es un carácter de PUNTUACIÓN");
-} else {
-    console.log("Es un carácter ESPECIAL");
-}
+if (/[a-zA-Z]/.test(c)) console.log("Alfabético");
+else if (/[0-9]/.test(c)) console.log("Dígito");
+else console.log("Especial");

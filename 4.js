@@ -1,9 +1,9 @@
-const prompt = require('prompt-sync')();
+const prompt = require("prompt-sync")();
 
-let numero = Number(prompt("Ingresa un número: "));
+let num = parseInt(prompt("Ingrese un número: "));
 
-if (numero % 2 === 0) {
-    console.log("El número " + numero + " es PAR");
+if (num % 2 === 0) {
+    console.log("Es par");
 } else {
-    console.log("El número " + numero + " es IMPAR");
+    console.log("Es impar");
 }

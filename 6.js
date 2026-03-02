@@ -1,13 +1,8 @@
-const prompt = require('prompt-sync')();
+const prompt = require("prompt-sync")();
 
-let peso = Number(prompt("Ingresa el peso del alumno en kg: "));
+let peso = parseFloat(prompt("Ingrese el peso: "));
 
-if (peso < 40) {
-    console.log("El alumno está en el grupo de: menos de 40 kg");
-} else if (peso >= 40 && peso <= 50) {
-    console.log("El alumno está en el grupo de: entre 40 y 50 kg");
-} else if (peso > 50 && peso < 60) {
-    console.log("El alumno está en el grupo de: más de 50 kg y menos de 60 kg");
-} else {
-    console.log("El alumno está en el grupo de: 60 kg o más");
-}
+if (peso < 40) console.log("Menos de 40kg");
+else if (peso < 50) console.log("Entre 40 y 50kg");
+else if (peso < 60) console.log("Entre 50 y 60kg");
+else console.log("60kg o más");
